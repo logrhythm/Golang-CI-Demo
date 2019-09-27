@@ -13,7 +13,7 @@ steps:
 
   - id: go_test
     name: "gcr.io/cloud-builders/go"
-    args: ["test","."]
+    args: ["test","src"]
     env: ["GOPATH=."]
 
   # - id: go_security
@@ -23,7 +23,7 @@ steps:
 
   - id: your_step_here
     name: "gcr.io/cloud-builders/go"
-    args: ["run","."]
+    args: ["run","src"]
     env: ["GOPATH=."]
   
   - name: 'gcr.io/cloud-builders/docker'
