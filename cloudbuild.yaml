@@ -28,5 +28,5 @@ steps:
   
   - id: create_docker_image    
     name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'gcr.io/stellar-aurora-254109/helloSample', '.']
+    args: ['build', '-t', 'gcr.io/stellar-aurora-254109/hellosample', '.']
   
