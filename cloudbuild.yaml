@@ -30,8 +30,4 @@ steps:
   - id: create_docker_image    
     name: 'gcr.io/cloud-builders/docker'
     args: ['build', '-t', 'gcr.io/stellar-aurora-254109/helloSample', '.']
-  images: ['gcr.io/stellar-aurora-254109/helloSample']
-
-  - id: push_docker_image
-    name: 'gcr.io/cloud-builders/docker'
-    args: ['push', 'gcr.io/stellar-aurora-254109/helloSample']
+  
