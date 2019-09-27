@@ -1,5 +1,6 @@
 steps:
   # see https://www.npmjs.com/package/editorconfig-checker
+  #
  
 
   - id: go_version
