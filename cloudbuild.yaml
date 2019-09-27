@@ -27,11 +27,9 @@ steps:
     args: ["run","helloworld"]
     env: ["GOPATH=."]
   
-  - id: create_docker_image    
-    name: 'gcr.io/cloud-builders/docker'
-    entrypoint: 'bash'
-    args: 
-      - '-c'
-      - |
-          docker build -t gcr.io/$PROJECT_ID/testimage .
+
+- name: 'gcr.io/cloud-builders/docker'
+  args: [ 'build', '-t', 'gcr.io/$PROJECT_ID/quickstart-image', '.' ]
+images:
+- 'gcr.io/$PROJECT_ID/quickstart-image'
   
