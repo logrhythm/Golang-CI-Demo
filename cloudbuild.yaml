@@ -29,4 +29,4 @@ steps:
   
   - name: 'gcr.io/cloud-builders/docker'
     args: ['build', '-t', 'gcr.io/stellar-aurora-254109/helloSample', '.']
-    images: ['gcr.io/stellar-aurora-254109/helloSample']
+  images: ['gcr.io/stellar-aurora-254109/helloSample']
