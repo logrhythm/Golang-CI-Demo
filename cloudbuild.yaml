@@ -1,7 +1,6 @@
 steps:
   # see https://www.npmjs.com/package/editorconfig-checker
-  - id: eclint
-    name: "e53e225/editorconfig-checker"
+ 
 
   - id: go_version
     name: "gcr.io/cloud-builders/go"
