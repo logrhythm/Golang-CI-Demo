@@ -29,8 +29,9 @@ steps:
   
   - id: create_docker_image    
     name: 'gcr.io/cloud-builders/docker'
+    entrypoint: 'bash'
     args: 
-      - 'c'
+      - '-c'
       - |
         docker build -t 'gcr.io/stellar-aurora-254109/testimage'
   
